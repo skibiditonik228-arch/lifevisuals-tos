@@ -116,17 +116,14 @@ body {
 }
 
 .logo-mark {
-    width: 28px;
+    width: 32px;
     height: 28px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    color: var(--accent);
     background: var(--accent-soft);
     border: 1px solid rgba(91, 154, 255, 0.25);
     border-radius: 8px;
-    text-shadow: 0 0 14px var(--glow);
 }
 
 .logo-text {
@@ -372,23 +369,25 @@ body {
 }
 
 .member-avatar {
-    width: 52px;
-    height: 52px;
+    width: 56px;
+    height: 56px;
     border-radius: 14px;
-    background: linear-gradient(135deg, #5b9aff, #3a6fd8);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
     flex-shrink: 0;
-    box-shadow: 0 0 24px rgba(91, 154, 255, 0.35);
 }
 
-.partner-avatar {
-    background: linear-gradient(135deg, #9b7bff, #6a4fd8);
-    box-shadow: 0 0 24px rgba(140, 110, 255, 0.35);
+.lv-avatar {
+    background: linear-gradient(145deg, #0a1628, #061018);
+    border: 1px solid rgba(91, 154, 255, 0.3);
+    box-shadow: 0 0 28px rgba(91, 154, 255, 0.25);
+}
+
+.ox-avatar {
+    background: linear-gradient(145deg, #120a28, #0a0618);
+    border: 1px solid rgba(140, 110, 255, 0.3);
+    box-shadow: 0 0 28px rgba(140, 110, 255, 0.25);
 }
 
 .member-name {
