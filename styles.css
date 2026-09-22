@@ -347,7 +347,9 @@ body {
 /* ===== Team ===== */
 .team-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 16px;
     padding: 20px 0 12px;
 }
 
@@ -359,7 +361,14 @@ body {
     border: 1px solid rgba(91, 154, 255, 0.15);
     border-radius: 16px;
     padding: 20px 28px;
-    min-width: 280px;
+    min-width: 260px;
+    flex: 1 1 260px;
+    max-width: 340px;
+}
+
+.team-member.partner {
+    background: rgba(120, 90, 255, 0.07);
+    border-color: rgba(140, 110, 255, 0.2);
 }
 
 .member-avatar {
@@ -377,6 +386,11 @@ body {
     box-shadow: 0 0 24px rgba(91, 154, 255, 0.35);
 }
 
+.partner-avatar {
+    background: linear-gradient(135deg, #9b7bff, #6a4fd8);
+    box-shadow: 0 0 24px rgba(140, 110, 255, 0.35);
+}
+
 .member-name {
     font-size: 17px;
     font-weight: 650;
@@ -389,6 +403,10 @@ body {
     color: var(--accent);
     font-weight: 500;
     margin-top: 2px;
+}
+
+.partner .member-role {
+    color: #b49aff;
 }
 
 .member-discord {
@@ -472,6 +490,7 @@ body {
 
     .team-member {
         min-width: auto;
+        max-width: 100%;
         width: 100%;
         padding: 16px 20px;
     }
