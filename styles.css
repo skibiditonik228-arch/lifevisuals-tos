@@ -344,6 +344,67 @@ body {
     color: var(--text-muted);
 }
 
+/* ===== Team ===== */
+.team-grid {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 12px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: rgba(91, 154, 255, 0.06);
+    border: 1px solid rgba(91, 154, 255, 0.15);
+    border-radius: 16px;
+    padding: 20px 28px;
+    min-width: 280px;
+}
+
+.member-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #5b9aff, #3a6fd8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+    box-shadow: 0 0 24px rgba(91, 154, 255, 0.35);
+}
+
+.member-name {
+    font-size: 17px;
+    font-weight: 650;
+    color: var(--text);
+    letter-spacing: -0.2px;
+}
+
+.member-role {
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.member-discord {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-top: 6px;
+}
+
+.team-note {
+    text-align: center;
+    font-size: 13.5px;
+    color: var(--text-muted);
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
 /* ===== Footer ===== */
 .footer {
     padding: 40px 0 48px;
@@ -357,6 +418,7 @@ body {
     gap: 10px;
     font-size: 13px;
     color: var(--text-muted);
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -397,5 +459,20 @@ body {
     .logo-text {
         font-size: 12px;
         letter-spacing: 1.4px;
+    }
+
+    .nav {
+        gap: 2px;
+    }
+
+    .nav-item {
+        padding: 6px 10px;
+        font-size: 12.5px;
+    }
+
+    .team-member {
+        min-width: auto;
+        width: 100%;
+        padding: 16px 20px;
     }
 }
